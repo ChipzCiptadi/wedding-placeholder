@@ -13,10 +13,10 @@
     <div class="container">
         <div class="mx-auto flex h-screen w-screen flex-col place-content-center items-center">
             <h1>Ciptadi <span class="text-red-500">&hearts;</span> Widya</h1>
-            <a id="invitation" class="button" href="/">Undangan Digital</a>
+            <a id="invitation" class="button" href="#">Undangan Digital</a>
             <a class="button" href="https://goo.gl/maps/s3xLRo5LjNFCDCGA7">Peta Lokasi</a>
             <a class="button" href="./kidung.html">Kidung Pemberkatan</a>
-            <a class="button" href="/">Zoom</a>
+            <a class="button" href="#">Zoom</a>
         </div>
     </div>
 
@@ -24,7 +24,7 @@
         const params = new Proxy(new URLSearchParams(window.location.search), {
             get: (searchParams, prop) => searchParams.get(prop),
         });
-        const url = "";
+        const url = "#";
         const to = params.to ?? "guest";
 
         document.getElementById("invitation").href = url + "?u=" + to;
