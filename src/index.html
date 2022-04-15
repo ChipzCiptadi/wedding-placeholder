@@ -15,20 +15,12 @@
             <h1>Ciptadi <span class="text-red-500">&hearts;</span> Widya</h1>
             <a id="invitation" class="button" href="#">Undangan Digital</a>
             <a class="button" href="https://goo.gl/maps/s3xLRo5LjNFCDCGA7">Peta Lokasi</a>
-            <a class="button" href="./kidung.html">Kidung Pemberkatan</a>
-            <a class="button" href="#">Zoom</a>
+            <a id="kidung" class="button" href="./kidung.html">Kidung Pemberkatan</a>
+            <a id="zoom" class="button" href="#">Link Zoom</a>
         </div>
     </div>
 
-    <script>
-        const params = new Proxy(new URLSearchParams(window.location.search), {
-            get: (searchParams, prop) => searchParams.get(prop),
-        });
-        const url = "#";
-        const dear = params.dear ?? "guest";
-
-        document.getElementById("invitation").href = url + "?u=" + dear;
-    </script>
+    <script src="./index.min.js?v=202204152219"></script>
 </body>
 
 </html>
