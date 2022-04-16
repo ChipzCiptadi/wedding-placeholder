@@ -4,8 +4,8 @@ const $ = (id) => document.getElementById(id);
 const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
 });
-const weddingURL = "#";
-const dear = params.dear ?? "guest";
+const weddingURL = "https://hi.possiblewedding.com/ciptadi-widya";
+const dear = params.dear ?? "dearest";
 
 $("invitation").href = weddingURL + "?u=" + dear;
 
